@@ -509,7 +509,6 @@ GameObject:
   m_Component:
   - component: {fileID: 754458579}
   - component: {fileID: 754458578}
-  - component: {fileID: 754458577}
   - component: {fileID: 754458576}
   m_Layer: 8
   m_Name: obstacle
@@ -544,18 +543,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &754458577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754458575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27935b9e8a5c445fa822070d2513a308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &754458578
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -796,6 +783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1890145081}
   - component: {fileID: 1890145080}
+  - component: {fileID: 1890145082}
   - component: {fileID: 1890145079}
   - component: {fileID: 1890145078}
   m_Layer: 14
@@ -910,12 +898,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890145077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.68, y: 2.54, z: 0}
+  m_LocalPosition: {x: -3.77, y: 2.16, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890145082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890145077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27935b9e8a5c445fa822070d2513a308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2084913423
 GameObject:
   m_ObjectHideFlags: 0

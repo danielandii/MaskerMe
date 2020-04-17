@@ -5,7 +5,7 @@ public class SceneSwitcher : MonoBehaviour
 {
     public void GotoNorePlay()
     {
-        SceneManager.LoadScene("NorePlay");
+        SceneManager.LoadScene("MainScene");
     }
 
     public void GotoNoreMenu()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Collision : MonoBehaviour
+public class Player : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {

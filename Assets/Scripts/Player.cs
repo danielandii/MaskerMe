@@ -8,12 +8,14 @@ public class Player : MonoBehaviour
 {
 	Animator anim;
 	Rigidbody2D rb;
+	BoxCollider2D bc;
 	private float jumpForce = 800f;
 
 	// Use this for initialization
 	private void Start () {
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
+		bc = GetComponent<BoxCollider2D>();
 	}
 	
 	// Update is called once per frame
@@ -35,10 +37,15 @@ public class Player : MonoBehaviour
 
 		if (CrossPlatformInputManager.GetButtonDown ("slide") && rb.velocity.y == 0) {
 			anim.SetBool ("isSliding", true);
+			// bc.size = new Vector2(2.4f, 3f);
 			Debug.Log("sliding");
+			Debug.Log(bc.size);
 		}
 		else {
 			anim.SetBool ("isSliding", false);
+			// bc.size = new Vector2(2.4f, 3.5f);
+			Debug.Log("run");
+			Debug.Log(bc.size);
 		}
 
 		if (rb.velocity.y > 0){

@@ -7,9 +7,20 @@ public class ScoreManager : MonoBehaviour
 {
     public int score;
     public Text scoreDisplay;
+    int highscore;
 
+    private void Start()
+    {
+        highscore = PlayerPrefs.GetInt("highscore", 0);
+        Debug.Log(highscore);
+    }
     private void Update()
     {
+        if (score > highscore)
+        {
+            PlayerPrefs.SetInt("highscore", score);
+        }
+        PlayerPrefs.SetInt("score", score);
         scoreDisplay.text = score.ToString();
     }
 
@@ -17,7 +28,10 @@ public class ScoreManager : MonoBehaviour
     {
         if (other.CompareTag("People"))
         {
-            score++;
+            if (score++ > highscore)
+            {
+                highscore = score;
+            }
         }
     }
 }

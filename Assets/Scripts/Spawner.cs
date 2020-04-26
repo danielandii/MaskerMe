@@ -15,6 +15,7 @@ public class Spawner : MonoBehaviour
     {
         if (timeSpawn <= 0)
         {
+            //Debug.Log(obstacles[1].GetComponent("Obstacles"));
             int i = Random.Range(0, obstacles.Length);
             Instantiate(obstacles[i], transform.position, Quaternion.identity);
             timeSpawn = startTimeSpawn;

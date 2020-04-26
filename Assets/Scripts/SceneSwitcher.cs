@@ -17,4 +17,9 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("NoreGameOver");
     }
+
+    public void GotoTutorial()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
 }

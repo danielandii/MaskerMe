@@ -5,22 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/playerScene.unity
     guid: a7ee0607eccd0bb44bb22a18533bb95f
-  - enabled: 1
-    path: Assets/Scenes/NoreMenu.unity
-    guid: 0263de565f61e934fabd32e46a6b836b
   - enabled: 0
     path: Assets/Scenes/NorePlay.unity
     guid: e663231b719b64542bb20f7711eb8f7d
   - enabled: 1
-    path: Assets/Scenes/NoreGameOver.unity
-    guid: dee60e3794484264cb5fc6e1e9793a35
+    path: Assets/Scenes/NoreMenu.unity
+    guid: 0263de565f61e934fabd32e46a6b836b
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: d291501e924c1294e9cdfa04a2c0c9af
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2dff0a44568234f1dbf3b44b2fd0e8c0
   - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: d291501e924c1294e9cdfa04a2c0c9af
+    path: Assets/Scenes/NoreGameOver.unity
+    guid: dee60e3794484264cb5fc6e1e9793a35
   m_configObjects: {}

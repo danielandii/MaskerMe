@@ -66,6 +66,18 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadScene("NoreGameOver");
+            // Debug.Log("Collide");
         }
+
+        if (other.CompareTag("People"))
+        {
+            anim.SetBool("isGiving", true);
+            // Debug.Log("Give");
+        } 
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        anim.SetBool("isGiving", false);
     }
 }

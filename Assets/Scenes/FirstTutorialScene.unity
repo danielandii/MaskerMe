@@ -831,7 +831,7 @@ GameObject:
   - component: {fileID: 1860053725}
   - component: {fileID: 1860053724}
   m_Layer: 5
-  m_Name: back
+  m_Name: play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bf3be603548374ca46f521a3aa7fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: back
+  Name: tapPlay
 --- !u!114 &1860053725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,7 +913,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1760600952}
-        m_MethodName: GotoNoreMenu
+        m_MethodName: GotoNorePlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 28e649347e41e494896b8638eeb3c35a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fafeba99311343b8bc0ec39aaeb0253, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

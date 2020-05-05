@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     BoxCollider2D bc;
     private float jumpForce = 800f;
+    private float speed;
+    public GameObject obj;
 
     // Use this for initialization
     private void Start()
@@ -19,6 +21,8 @@ public class Player : MonoBehaviour
         bc = GetComponent<BoxCollider2D>();
         FindObjectOfType<AudioManager>().Play("Run");
         FindObjectOfType<AudioManager>().Unmute("Run");
+        // speed = getObj.speed;
+        speed = 0;
     }
 
     // Update is called once per frame
@@ -40,6 +44,13 @@ public class Player : MonoBehaviour
 
 
         SetAnimationState();
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
+
+        if (transform.position.x <= -15)
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("NoreGameOver");
+        }
     }
 
     IEnumerator onSlideSound()
@@ -100,6 +111,11 @@ public class Player : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("GameOver");
             FindObjectOfType<AudioManager>().Mute("Run");
             //FindObjectOfType<AudioManager>().Mute("ThemeSong");
+            incraseSpeed getObj = obj.GetComponent<incraseSpeed>();
+            speed = getObj.speed;
+            anim.SetBool("isDead", true);
+            // Destroy(gameObject);
+            // SceneManager.LoadScene("NoreGameOver");
             // Debug.Log("Collide");
         }
 

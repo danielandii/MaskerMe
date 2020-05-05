@@ -260,8 +260,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585648796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.005, y: -1.973, z: 675.5254}
-  m_LocalScale: {x: 24.13044, y: 15.735758, z: 1}
+  m_LocalPosition: {x: 10.097, y: -0.79, z: 675.5254}
+  m_LocalScale: {x: 20.219698, y: 16.751791, z: 1}
   m_Children: []
   m_Father: {fileID: 167810039}
   m_RootOrder: 1
@@ -648,8 +648,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852799701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.452, y: -2.033, z: 675.5254}
-  m_LocalScale: {x: 20.850847, y: 15.784345, z: 1}
+  m_LocalPosition: {x: -9.685, y: -0.749, z: 675.5254}
+  m_LocalScale: {x: 19.497726, y: 16.800507, z: 1}
   m_Children: []
   m_Father: {fileID: 167810039}
   m_RootOrder: 0
@@ -713,7 +713,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 21.46, y: 10.8033495}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -733,7 +733,7 @@ GameObject:
   - component: {fileID: 1860053725}
   - component: {fileID: 1860053724}
   m_Layer: 5
-  m_Name: back
+  m_Name: play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bf3be603548374ca46f521a3aa7fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: back
+  Name: tapPlay
 --- !u!114 &1860053725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1760600952}
-        m_MethodName: GotoNoreMenu
+        m_MethodName: GotoNorePlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 28e649347e41e494896b8638eeb3c35a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fafeba99311343b8bc0ec39aaeb0253, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

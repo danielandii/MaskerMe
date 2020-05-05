@@ -7,12 +7,17 @@ public class SceneSwitcher : MonoBehaviour
     
     void OnApplicationFocus(bool hasFocus)
     {
-         Screen.orientation = ScreenOrientation.LandscapeLeft;
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 
     public void GotoNorePlay()
     {
-        SceneManager.LoadScene("MainScene");
+        if(PlayerPrefs.HasKey("firstTIme")){
+            SceneManager.LoadScene("MainScene");
+        } else {
+            SceneManager.LoadScene("FirstTutorialScene");
+            PlayerPrefs.SetInt("firstTIme", 1);
+        }
     }
 
     public void GotoNoreMenu()
@@ -29,4 +34,9 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("TutorialScene");
     }
+
+    public void exitGame()
+    {
+        Application.Quit();
+    } 
 }

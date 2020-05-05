@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     BoxCollider2D bc;
     private float jumpForce = 800f;
+    private float speed;
+    public GameObject obj;
 
     // Use this for initialization
     private void Start()
@@ -17,6 +19,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         bc = GetComponent<BoxCollider2D>();
+        // speed = getObj.speed;
+        speed = 0;
     }
 
     // Update is called once per frame
@@ -27,6 +31,12 @@ public class Player : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce);
 
         SetAnimationState();
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        
+        if(transform.position.x <= -15){
+            Destroy(gameObject);
+            SceneManager.LoadScene("NoreGameOver");
+        }
     }
 
     void SetAnimationState()
@@ -64,8 +74,11 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene("NoreGameOver");
+            incraseSpeed getObj = obj.GetComponent<incraseSpeed>();
+            speed = getObj.speed;
+            anim.SetBool("isDead", true);
+            // Destroy(gameObject);
+            // SceneManager.LoadScene("NoreGameOver");
             // Debug.Log("Collide");
         }
 

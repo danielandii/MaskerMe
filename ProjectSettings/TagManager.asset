@@ -8,6 +8,7 @@ TagManager:
   - People
   - Background
   - EndPoint
+  - Ground
   layers:
   - Default
   - TransparentFX

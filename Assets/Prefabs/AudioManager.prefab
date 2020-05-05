@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3278749743001276227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3278749743001276224}
+  - component: {fileID: 3278749743001276225}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3278749743001276224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278749743001276227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3278749743001276225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278749743001276227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49a260d9a7d046128c4b14594da47df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: ThemeSong
+    clip: {fileID: 8300000, guid: 43e44d2c5ae854ddcbddd296689d4995, type: 3}
+    volume: 0.5
+    loop: 1
+    source: {fileID: 0}
+  - name: Run
+    clip: {fileID: 8300000, guid: 7eb9b692416b44ac697b8a2ecea288db, type: 3}
+    volume: 0.3
+    loop: 1
+    source: {fileID: 0}
+  - name: Slide
+    clip: {fileID: 8300000, guid: a96bb982e88e04786a08292692423a5a, type: 3}
+    volume: 0.3
+    loop: 0
+    source: {fileID: 0}
+  - name: Collide
+    clip: {fileID: 8300000, guid: 43e44d2c5ae854ddcbddd296689d4995, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Pasien
+    clip: {fileID: 8300000, guid: f250a743f3aa84abb9d170aee9dcb8f5, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 1d9c6df197bf541118de4b77cafe9140, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}

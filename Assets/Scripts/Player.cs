@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         bc = GetComponent<BoxCollider2D>();
+        FindObjectOfType<AudioManager>().Play("Run");
+        FindObjectOfType<AudioManager>().Unmute("Run");
     }
 
     // Update is called once per frame
@@ -24,9 +26,37 @@ public class Player : MonoBehaviour
     {
 
         if (CrossPlatformInputManager.GetButtonDown("jump") && rb.velocity.y == 0)
+        {
             rb.AddForce(Vector2.up * jumpForce);
+            StopCoroutine(onJumpSound());
+            StartCoroutine(onJumpSound());
+        }
+
+        if (CrossPlatformInputManager.GetButtonDown("slide"))
+        {
+            StopCoroutine(onSlideSound());
+            StartCoroutine(onSlideSound());
+        }
+
 
         SetAnimationState();
+    }
+
+    IEnumerator onSlideSound()
+    {
+        Debug.Log("slide sound");
+        FindObjectOfType<AudioManager>().Play("Slide");
+        FindObjectOfType<AudioManager>().Mute("Run");
+        yield return new WaitForSeconds(1);
+        FindObjectOfType<AudioManager>().Unmute("Run");
+    }
+    IEnumerator onJumpSound()
+    {
+        Debug.Log("slide sound");
+        FindObjectOfType<AudioManager>().Play("Jump");
+        FindObjectOfType<AudioManager>().Mute("Run");
+        yield return new WaitForSeconds(1);
+        FindObjectOfType<AudioManager>().Unmute("Run");
     }
 
     void SetAnimationState()
@@ -42,12 +72,12 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("isSliding", true);
             // bc.size = new Vector2(2.4f, 3f);
-            //Debug.Log("sliding");
             //Debug.Log(bc.size);
         }
         else
         {
             anim.SetBool("isSliding", false);
+            //FindObjectOfType<AudioManager>().Unmute("Run");
             // bc.size = new Vector2(2.4f, 3.5f);
             //Debug.Log("run");
             //Debug.Log(bc.size);
@@ -66,14 +96,19 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadScene("NoreGameOver");
+            FindObjectOfType<AudioManager>().Play("Collide");
+            FindObjectOfType<AudioManager>().Play("GameOver");
+            FindObjectOfType<AudioManager>().Mute("Run");
+            //FindObjectOfType<AudioManager>().Mute("ThemeSong");
             // Debug.Log("Collide");
         }
 
         if (other.CompareTag("People"))
         {
             anim.SetBool("isGiving", true);
+            FindObjectOfType<AudioManager>().Play("Pasien");
             // Debug.Log("Give");
-        } 
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)

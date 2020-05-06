@@ -16,10 +16,10 @@ public class ScoreManager : MonoBehaviour
     }
     private void Update()
     {
-        if (score > highscore)
-        {
-            PlayerPrefs.SetInt("highscore", score);
-        }
+        // if (score > highscore)
+        // {
+        //     PlayerPrefs.SetInt("highscore", score);
+        // }
         PlayerPrefs.SetInt("score", score);
         scoreDisplay.text = score.ToString();
     }
@@ -28,10 +28,11 @@ public class ScoreManager : MonoBehaviour
     {
         if (other.CompareTag("People"))
         {
-            if (score++ > highscore)
-            {
-                highscore = score;
-            }
+            score++;
+            // if (score++ > highscore)
+            // {
+            //     highscore = score;
+            // }
         }
     }
 }

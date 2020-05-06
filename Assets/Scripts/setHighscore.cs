@@ -9,6 +9,7 @@ public class setHighscore : MonoBehaviour
     int score;
     public Text scoreDisplay;
     public Text highscoreDisplay;
+    public Text lastHighscore;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +21,16 @@ public class setHighscore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreDisplay.text = highscore.ToString();
-        if (score + 1 > highscore)
+        scoreDisplay.text = score.ToString();
+        if (score > highscore)
         {
             highscoreDisplay.text = "NEW HIGHSCORE";
+            if (score > highscore)
+            {
+                PlayerPrefs.SetInt("highscore", score);
+            }
         }
+        highscore = PlayerPrefs.GetInt("highscore", 0);
+        lastHighscore.text = highscore.ToString();
     }
 }

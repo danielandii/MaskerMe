@@ -105,8 +105,6 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene("NoreGameOver");
             FindObjectOfType<AudioManager>().Play("Collide");
             FindObjectOfType<AudioManager>().Play("GameOver");
             FindObjectOfType<AudioManager>().Mute("Run");

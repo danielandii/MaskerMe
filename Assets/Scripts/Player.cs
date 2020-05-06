@@ -48,6 +48,8 @@ public class Player : MonoBehaviour
 
         if (transform.position.x <= -15)
         {
+            FindObjectOfType<AudioManager>().Play("GameOver");
+            FindObjectOfType<AudioManager>().Mute("Run");
             Destroy(gameObject);
             SceneManager.LoadScene("NoreGameOver");
         }
@@ -55,7 +57,7 @@ public class Player : MonoBehaviour
 
     IEnumerator onSlideSound()
     {
-        Debug.Log("slide sound");
+        //Debug.Log("slide sound");
         FindObjectOfType<AudioManager>().Play("Slide");
         FindObjectOfType<AudioManager>().Mute("Run");
         yield return new WaitForSeconds(1);
@@ -63,12 +65,13 @@ public class Player : MonoBehaviour
     }
     IEnumerator onJumpSound()
     {
-        Debug.Log("slide sound");
+        //Debug.Log("slide sound");
         FindObjectOfType<AudioManager>().Play("Jump");
         FindObjectOfType<AudioManager>().Mute("Run");
         yield return new WaitForSeconds(1);
         FindObjectOfType<AudioManager>().Unmute("Run");
     }
+
 
     void SetAnimationState()
     {
@@ -105,16 +108,15 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            FindObjectOfType<AudioManager>().Play("Collide");
-            FindObjectOfType<AudioManager>().Play("GameOver");
-            FindObjectOfType<AudioManager>().Mute("Run");
             //FindObjectOfType<AudioManager>().Mute("ThemeSong");
+            FindObjectOfType<AudioManager>().Play("Collide");
+            FindObjectOfType<AudioManager>().Mute("Run");
             incraseSpeed getObj = obj.GetComponent<incraseSpeed>();
             speed = getObj.speed;
             anim.SetBool("isDead", true);
             // Destroy(gameObject);
             // SceneManager.LoadScene("NoreGameOver");
-            // Debug.Log("Collide");
+            Debug.Log("Collide");
         }
 
         if (other.CompareTag("People"))

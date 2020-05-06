@@ -60,7 +60,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Collide
-    clip: {fileID: 8300000, guid: 43e44d2c5ae854ddcbddd296689d4995, type: 3}
+    clip: {fileID: 8300000, guid: 1ba9517552b17464aa0ee4a6a585aee7, type: 3}
     volume: 0.5
     loop: 0
     source: {fileID: 0}
@@ -70,7 +70,12 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Jump
-    clip: {fileID: 8300000, guid: 1d9c6df197bf541118de4b77cafe9140, type: 3}
+    clip: {fileID: 8300000, guid: 72f6b6ec5d9404f8caee3a0d1528f8e5, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 2f0a99376364f416eb0e2dbd6f7b2764, type: 3}
     volume: 0.5
     loop: 0
     source: {fileID: 0}

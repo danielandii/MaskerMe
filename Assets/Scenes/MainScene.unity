@@ -904,8 +904,8 @@ MonoBehaviour:
   - {fileID: 7493431022075710546, guid: 720bce41de4ac4cb7ba22fca888b20ec, type: 3}
   - {fileID: 2203072902225710448, guid: 17908dd633cb24ec680fff5fe94abb9f, type: 3}
   - {fileID: 3414126979551393684, guid: 079bdfc8e90394e498fb3ae2bf4409b6, type: 3}
-  - {fileID: 2842066346901355936, guid: b5d817391f05947d899c13c2a92b0335, type: 3}
-  - {fileID: 2842066346901355936, guid: b5d817391f05947d899c13c2a92b0335, type: 3}
+  - {fileID: 5594148062902861104, guid: f6ff9a70dea2d46bea6aee588a3649bf, type: 3}
+  - {fileID: 5594148062902861104, guid: f6ff9a70dea2d46bea6aee588a3649bf, type: 3}
   startTimeSpawn: 2
   decreaseTimeSpawn: 0.05
   minimumTime: 1.5

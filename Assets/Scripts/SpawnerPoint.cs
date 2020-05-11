@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class SpawnerPoint : MonoBehaviour
 {
-    public GameObject obstacle;
+    public GameObject[] obstacle;
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(obstacle, transform.position, Quaternion.identity);   
+        int i = Random.Range(0, obstacle.Length);
+        Instantiate(obstacle[i], transform.position, Quaternion.identity);   
     }
 }

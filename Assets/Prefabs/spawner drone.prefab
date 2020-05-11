@@ -88,5 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc439b73e41949f28046293c4eb01de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 5847937089330089136, guid: 2038eef284228400887219a46ebc0e7a,
-    type: 3}
+  obstacle:
+  - {fileID: 5847937089330089136, guid: 2038eef284228400887219a46ebc0e7a, type: 3}
+  - {fileID: 4139701793042747771, guid: cd4e24f9d01be8441bb74c8352c8e9be, type: 3}
+  - {fileID: 8896580159826138519, guid: 19a087a2f0c347c4b9b5cbe64cb67b33, type: 3}

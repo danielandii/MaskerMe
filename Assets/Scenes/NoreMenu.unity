@@ -294,13 +294,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacles:
   - {fileID: 2842066346901355936, guid: b5d817391f05947d899c13c2a92b0335, type: 3}
-  - {fileID: 2842066346901355936, guid: b5d817391f05947d899c13c2a92b0335, type: 3}
-  - {fileID: 2842066346901355936, guid: b5d817391f05947d899c13c2a92b0335, type: 3}
-  - {fileID: 2842066346901355936, guid: b5d817391f05947d899c13c2a92b0335, type: 3}
+  - {fileID: 4381395374022954706, guid: a1669542353bfb84cbf6387c931e96a5, type: 3}
+  - {fileID: 4381395374022954706, guid: a1669542353bfb84cbf6387c931e96a5, type: 3}
+  - {fileID: 814803108835521954, guid: 4d98dbd42cd77a6489a93e7ff746a590, type: 3}
   - {fileID: 2842066346901355936, guid: b5d817391f05947d899c13c2a92b0335, type: 3}
   startTimeSpawn: 2
-  decreaseTimeSpawn: 1
-  minimumTime: 2
+  decreaseTimeSpawn: 0.05
+  minimumTime: 0.8
 --- !u!4 &26049290
 Transform:
   m_ObjectHideFlags: 0

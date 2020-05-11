@@ -907,7 +907,7 @@ PrefabInstance:
     - target: {fileID: 3278749743001276225, guid: f6d3390df2f6a43bf921157b2b770021,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3278749743001276225, guid: f6d3390df2f6a43bf921157b2b770021,
         type: 3}
@@ -934,6 +934,26 @@ PrefabInstance:
       propertyPath: sounds.Array.data[6].volume
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278749743001276225, guid: f6d3390df2f6a43bf921157b2b770021,
+        type: 3}
+      propertyPath: sounds.Array.data[7].name
+      value: Child
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278749743001276225, guid: f6d3390df2f6a43bf921157b2b770021,
+        type: 3}
+      propertyPath: sounds.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 636ed8d593f46405b8d53ba14a1e3127, type: 3}
+    - target: {fileID: 3278749743001276225, guid: f6d3390df2f6a43bf921157b2b770021,
+        type: 3}
+      propertyPath: sounds.Array.data[8].name
+      value: Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278749743001276225, guid: f6d3390df2f6a43bf921157b2b770021,
+        type: 3}
+      propertyPath: sounds.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ee33d7d1c4604bbabfabd50750d4bf1, type: 3}
     - target: {fileID: 3278749743001276227, guid: f6d3390df2f6a43bf921157b2b770021,
         type: 3}
       propertyPath: m_Name

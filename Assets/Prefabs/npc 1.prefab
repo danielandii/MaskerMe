@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9147595683330739496}
   - component: {fileID: 442962520326185940}
   - component: {fileID: 5804772374087404684}
-  - component: {fileID: 3798173081816273674}
+  - component: {fileID: 5713229838807075690}
   m_Layer: 0
   m_Name: npc 1
   m_TagString: People
@@ -179,7 +179,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3798173081816273674
+--- !u!114 &5713229838807075690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,6 +188,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4381395374022954706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c50cf563a60b69e4c85689f11bcfedb7, type: 3}
+  m_Script: {fileID: 11500000, guid: 25dd8907caddb402e92de577b456617a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -122,7 +122,6 @@ public class Player : MonoBehaviour
         if (other.CompareTag("People"))
         {
             anim.SetBool("isGiving", true);
-            FindObjectOfType<AudioManager>().Play("Pasien");
             // Debug.Log("Give");
         }
     }

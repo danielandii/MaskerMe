@@ -16,8 +16,10 @@ public class Obstacle : MonoBehaviour
 
     void Update()
     {
+        incraseSpeed getObj = obj.GetComponent<incraseSpeed>();
+        speed = getObj.speed;
         transform.Translate(Vector2.left * speed * Time.deltaTime);
-        //Debug.Log(speed);
+        Debug.Log(speed);
     }
 
 }

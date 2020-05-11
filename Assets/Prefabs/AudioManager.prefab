@@ -64,7 +64,7 @@ MonoBehaviour:
     volume: 0.5
     loop: 0
     source: {fileID: 0}
-  - name: Pasien
+  - name: Man
     clip: {fileID: 8300000, guid: f250a743f3aa84abb9d170aee9dcb8f5, type: 3}
     volume: 0.5
     loop: 0
@@ -76,6 +76,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GameOver
     clip: {fileID: 8300000, guid: 2f0a99376364f416eb0e2dbd6f7b2764, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Child
+    clip: {fileID: 8300000, guid: 636ed8d593f46405b8d53ba14a1e3127, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Lady
+    clip: {fileID: 8300000, guid: 1ee33d7d1c4604bbabfabd50750d4bf1, type: 3}
     volume: 0.5
     loop: 0
     source: {fileID: 0}

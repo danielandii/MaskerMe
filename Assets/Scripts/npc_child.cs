@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class npc : MonoBehaviour
+public class npc_child : MonoBehaviour
 {
     Animator anim;
     Rigidbody2D rb;
@@ -31,7 +31,7 @@ public class npc : MonoBehaviour
             anim.SetBool("isHappy", true);
             mySpriteRenderer.flipX = true;
             Debug.Log("happy");
-            FindObjectOfType<AudioManager>().Play("Man");
+            FindObjectOfType<AudioManager>().Play("Child");
         }
     }
 }

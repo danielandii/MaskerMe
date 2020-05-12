@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b16a1b4f6cc54e92ad3be2cbfee35a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   startPos: 21.4
   endPos: -21.4
 --- !u!61 &135199265
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b16a1b4f6cc54e92ad3be2cbfee35a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   startPos: 21.4
   endPos: -21.4
 --- !u!61 &1046496824
@@ -907,8 +907,8 @@ MonoBehaviour:
   - {fileID: 5594148062902861104, guid: f6ff9a70dea2d46bea6aee588a3649bf, type: 3}
   - {fileID: 5594148062902861104, guid: f6ff9a70dea2d46bea6aee588a3649bf, type: 3}
   startTimeSpawn: 2
-  decreaseTimeSpawn: 0.1
-  minimumTime: 0.8
+  decreaseTimeSpawn: 0.07
+  minimumTime: 0.9
 --- !u!4 &1095131124
 Transform:
   m_ObjectHideFlags: 0
@@ -949,8 +949,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145091292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16364986, y: -4.58, z: 675.5254}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.04, y: -5.9, z: 675.5254}
+  m_LocalScale: {x: 1.066862, y: 1.047, z: 1}
   m_Children: []
   m_Father: {fileID: 1246997569}
   m_RootOrder: 6
@@ -968,18 +968,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.99653745}
+  m_Offset: {x: 0, y: 0.17349966}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21.4, y: 1.6405274}
+    oldSize: {x: 21.415634, y: 4.12}
     newSize: {x: 21.4, y: 1.6405274}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.4, y: 1.1140714}
+  m_Size: {x: 21.4, y: 1.2664311}
   m_EdgeRadius: 0
 --- !u!212 &1145091295
 SpriteRenderer:
@@ -1377,7 +1377,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 4.4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

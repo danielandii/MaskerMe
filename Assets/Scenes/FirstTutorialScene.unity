@@ -209,7 +209,7 @@ SpriteRenderer:
   m_SortingLayerID: -2100500985
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e57eddc3d402dc6479106e2ff2ca8ad2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3a3e4aa345f51044d9323d86d7703fbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -228,8 +228,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532801936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46, y: -0.573, z: -0.73292375}
-  m_LocalScale: {x: 0.99495775, y: 0.9319388, z: 1}
+  m_LocalPosition: {x: -0.18, y: -0.54, z: -0.73292375}
+  m_LocalScale: {x: 1.0526652, y: 0.9682845, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -260,8 +260,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585648796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.097, y: -0.79, z: 675.5254}
-  m_LocalScale: {x: 20.219698, y: 16.751791, z: 1}
+  m_LocalPosition: {x: 9.986, y: -0.79, z: 675.5254}
+  m_LocalScale: {x: 20.442116, y: 16.751791, z: 1}
   m_Children: []
   m_Father: {fileID: 167810039}
   m_RootOrder: 1
@@ -321,7 +321,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e212859aa776a4368837577fa7596b15, type: 3}
-  m_Color: {r: 0.7137255, g: 0.854902, b: 0.7686275, a: 1}
+  m_Color: {r: 0.9176471, g: 0.5686275, b: 0.45882356, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -648,8 +648,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852799701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.685, y: -0.749, z: 675.5254}
-  m_LocalScale: {x: 19.497726, y: 16.800507, z: 1}
+  m_LocalPosition: {x: -9.796, y: -0.749, z: 675.5254}
+  m_LocalScale: {x: 19.283253, y: 16.800507, z: 1}
   m_Children: []
   m_Father: {fileID: 167810039}
   m_RootOrder: 0
@@ -709,7 +709,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e212859aa776a4368837577fa7596b15, type: 3}
-  m_Color: {r: 0.9725491, g: 0.86666673, b: 0.6156863, a: 1}
+  m_Color: {r: 0.9607844, g: 0.8117648, b: 0.4666667, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -755,7 +755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.6, y: -201.2}
+  m_AnchoredPosition: {x: 0.000016212, y: -202}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.50000006, y: 0.50000006}
 --- !u!114 &1860053724
